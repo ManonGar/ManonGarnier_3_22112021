@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ManonGar/ManonGarnier_3_22112021/issues"
   },
-  "homepage": "https://github.com/ManonGar/ManonGarnier_3_22112021#readme"
+  "homepage": "https://github.com/ManonGar/ManonGarnier_3_22112021#readme",
+  "dependencies": {
+    "node-normalize-scss": "^8.1.2"
+  }
 }
