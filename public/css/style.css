@@ -1,5 +1,1 @@
-body {
-  background-color: black;
-}
-
-/*# sourceMappingURL=style.css.map */
+body{font-family:"Roboto",sans-serif;background-color:#f5f6f9;margin:0 auto}*{box-sizing:border-box}header{text-align:center;background-color:#fff;padding:8px;box-shadow:0 0 10px rgba(0,0,0,.2)}#logo{font-family:"Shrikhand",cursive;font-size:32px}/*# sourceMappingURL=style.css.map */
