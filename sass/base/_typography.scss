@@ -2,6 +2,19 @@ body {
     font-family: map-get($font-family, text);
     background-color: $lightgrey;
     margin: 0 auto;
+    color: #000000de;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #222020cf;
+    margin: 8px 0;
 }
 
 * {
