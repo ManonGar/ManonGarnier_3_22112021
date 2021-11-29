@@ -1,0 +1,50 @@
+.card-restaurant {
+    height: 260px;
+    flex: 1 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.2);
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    margin-top: 8px;
+
+    &--new {
+        position: relative;
+    }
+
+    img {
+        height: 70%;
+        width: 100%;
+        border-radius: 16px 16px 0 0;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    &__info {
+        line-height: 8px;
+        padding: 0 18px;
+        position: relative;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    .far {
+        font-size: 28px;
+        position: absolute;
+        top: 0px;
+        right: 24px;
+    }
+
+    .new {
+        background-color: $colour-tertiary;
+        color: green;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        padding: 6px 12px;
+        border-radius: 3px;
+    }
+}

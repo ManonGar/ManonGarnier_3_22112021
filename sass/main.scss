@@ -1,10 +1,31 @@
 @import "./utils/variables";
+
 @import "./base/typography";
+
+@import "./components/logo";
+@import "./components/button";
+@import "./components/step-card";
+@import "./components/card-restaurant";
+
+
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./layouts/section-1";
 @import "./layouts/section-2";
 @import "./layouts/section-3";
-@import "./components/logo";
-@import "./components/button";
-@import "./components/step-card";
+@import "./layouts/section-4";
+
+@import "./pages/homepage";
+
+// ordre d'import
+// Utils :
+// Variables.
+// Fonctions.
+// Mixins.
+// Placeholders.
+// Feuilles de style de tiers (vendors) (si vous en avez).
+// Base.
+// Composants.
+// Layout.
+// Pages.
+// Thèmes.
