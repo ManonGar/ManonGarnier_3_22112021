@@ -1,0 +1,17 @@
+footer {
+    background-color: $darkgrey;
+    color: white;
+    padding: 24px;
+    ul {
+       list-style-type: none; 
+       padding-inline-start: 0;
+       line-height: 26px;
+    }
+    .fas {
+        padding-right: 10px;
+    }
+}
+
+.fa-hands-helping {
+    font-size: 11px;
+}

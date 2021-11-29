@@ -4,5 +4,7 @@ $colour-tertiary: #99E2D0;
 
 $lightgrey: #f5f6f9;
 $grey: #ddddddd1;
+$darkgrey: #2e2c2ceb;
 
-$font-size: (logo:32px, heading:24px);
+$font-size: (logo-big:32px, heading:24px);
+$font-family: (text: ('Roboto', sans-serif), logo: ('Shrikhand', cursive));

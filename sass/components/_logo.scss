@@ -1,0 +1,6 @@
+.logo {
+    font-family: map-get($font-family, logo);
+    &--big {
+        font-size: map-get($font-size, logo-big);
+    }
+}
