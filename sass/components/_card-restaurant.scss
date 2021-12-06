@@ -24,9 +24,10 @@
     }
 
     &__info {
-        line-height: 8px;
-        padding: 0 18px;
-        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: 14px 32px 0px 12px;
+        line-height: 24px;
     }
 
     p {
@@ -36,7 +37,6 @@
 
     .far {
         font-size: 28px;
-        position: absolute;
         top: 0px;
         right: 24px;
     }

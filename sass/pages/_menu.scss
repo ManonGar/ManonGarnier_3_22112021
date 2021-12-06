@@ -1,0 +1,49 @@
+.main {
+    img {
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+.menu {
+    padding: 24px 18px;
+    right: 0;
+    left: 0;
+    background-color: $lightgrey;
+    border-radius: 24px 24px 0 0;
+
+    &__top {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        margin: 20px 0 40px 0;
+    }
+
+    .far {
+        font-size: 24px;
+    }
+
+    hr {
+        color: $colour-tertiary;
+        background-color: $colour-tertiary;
+        border: 1.5px solid;
+        width: 36px;
+        margin-inline: initial;
+        margin: 0;
+    }
+
+    .order {
+        text-align: center;
+    }
+
+    .main-btn {
+        padding: 15px 45px;
+    }
+}

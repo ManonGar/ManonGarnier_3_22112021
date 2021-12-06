@@ -7,16 +7,18 @@
 @import "./components/button";
 @import "./components/step-card";
 @import "./components/card-restaurant";
+@import "./components/card-menu";
 
 
-@import "./layouts/header";
-@import "./layouts/footer";
-@import "./layouts/section-1";
-@import "./layouts/section-2";
-@import "./layouts/section-3";
-@import "./layouts/section-4";
+@import "./layouts/homepage/header";
+@import "./layouts/homepage/footer";
+@import "./layouts/homepage/section-1";
+@import "./layouts/homepage/section-2";
+@import "./layouts/homepage/section-3";
+@import "./layouts/homepage/section-4";
 
 @import "./pages/homepage";
+@import "./pages/menu";
 
 // ordre d'import
 // Utils :
