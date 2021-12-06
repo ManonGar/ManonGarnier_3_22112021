@@ -7,6 +7,9 @@
     text-decoration: none;
     color: black;
     margin-top: 8px;
+    @include desktop-only {
+        flex: 1 48%;
+    }
 
     &--new {
         position: relative;
