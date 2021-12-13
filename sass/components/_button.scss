@@ -6,4 +6,9 @@
     font-size: 16px;
     border: none;
     box-shadow: -1px 5px 10px rgb(0 0 0 / 20%);
+    transition: opacity 450ms ease-in-out, box-shadow 300ms 150ms ease-in-out;
+    &:hover {
+        opacity: 0.9;
+        box-shadow: -1px 5px 10px rgb(0 0 0 / 40%);
+    }
 }
