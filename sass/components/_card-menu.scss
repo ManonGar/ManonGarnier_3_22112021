@@ -1,3 +1,7 @@
+$num-menus: 10;
+$anim-duration: 1000ms;
+$anim-delay: $anim-duration / $num-menus;
+
 .card-menu {
     background-color: white;
     padding: 14px;
@@ -5,6 +9,13 @@
     box-shadow: 0 0 10px rgb(0 0 0 / 0.2);
     flex: 1 100%;
     line-height: 24px;
+    animation: menu $anim-duration 150ms;
+    transform-origin: top;
+    @for $i from 1 through $num-menus {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
+    }
 
     &__info {
         display: flex;
@@ -19,5 +30,14 @@
 
     span {
         font-weight: 700;
+    }
+}
+
+@keyframes menu {
+    from {
+        transform: scaleY(0)
+    }
+    to {
+        transform: scaleY(1);
     }
 }
