@@ -4,40 +4,88 @@ $anim-delay: $anim-duration / $num-menus;
 
 .card-menu {
     background-color: white;
-    padding: 14px;
     border-radius: 16px;
     box-shadow: 0 0 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
     flex: 1 100%;
     line-height: 24px;
-    animation: menu $anim-duration 150ms;
-    transform-origin: top;
+    display: flex;
     @for $i from 1 through $num-menus {
         &--#{$i} {
             animation-delay: $anim-delay * $i;
         }
     }
-
     &__info {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    p {
+        padding: 12px 0 12px 12px;
         font-weight: 300;
         font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
     }
-
-    span {
+    .card-description {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    &__price {
         font-weight: 700;
+        padding: 0 18px 12px 0;
+    }
+    &__check {
+        height: 100%;
+        background-color: $colour-tertiary;
+        border-radius: 0 16px 16px 0;
+        width: 0;
+        max-width: 100px;
+        position: relative;
+    }
+    &:hover {
+        & > .card-menu__check {
+            animation: appear 1000ms 150ms ease-in-out forwards;
+            transform-origin: right;
+            & > .fa-check-circle {
+                animation: rotate 1s ease-in-out;
+            }
+        }
+        & >.card-menu__price {
+            margin-right: 20px;
+        }
     }
 }
 
-@keyframes menu {
+.card-description p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fa-check-circle {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 36%;
+    right: 38%;
+}
+
+@keyframes appear {
+	0% {
+		width: 0%;
+	}
+    50% {
+        width: 50%;
+    }
+	100% {
+		width: 100%;
+	}
+}
+
+@keyframes rotate {
     from {
-        transform: scaleY(0)
+        transform: rotate(0deg);
     }
     to {
-        transform: scaleY(1);
+        transform: rotate(360deg);
     }
 }
