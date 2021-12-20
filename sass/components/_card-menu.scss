@@ -1,5 +1,5 @@
 $num-menus: 10;
-$anim-duration: 1000ms;
+$anim-duration: 1500ms;
 $anim-delay: $anim-duration / $num-menus;
 
 .card-menu {
@@ -10,6 +10,8 @@ $anim-delay: $anim-duration / $num-menus;
     flex: 1 100%;
     line-height: 24px;
     display: flex;
+    opacity: 0;
+    animation: delay $anim-duration linear forwards;
     @for $i from 1 through $num-menus {
         &--#{$i} {
             animation-delay: $anim-delay * $i;
@@ -87,5 +89,20 @@ $anim-delay: $anim-duration / $num-menus;
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes delay {
+    0% {
+      transform: translateY(7px);
+      opacity:0;
+    }
+    50% {
+      transform: translateY(2.5px);
+      opacity:0.5;
+    }
+    100% {
+      transform: translateY(-2.5px);
+      opacity:1;
     }
 }

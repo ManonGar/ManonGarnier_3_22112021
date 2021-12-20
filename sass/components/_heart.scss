@@ -1,21 +1,24 @@
 .btn-heart .far {
     font-size: 28px;
-    color: $colour-primary;
+    color: black;
     z-index: 1;
 }
 
 .btn-heart .fas {
     color: white;
-    font-size: 28px;
+    font-size: 24px;
 }
 
-.btn-heart:hover .fas {
-    animation: heart 800ms ease-in-out;
-    transform-origin: 50% bottom;
-    animation-fill-mode: forwards;
+.btn-heart:hover {
+    .fas {
+        animation: full-heart 800ms linear forwards;
+        transform-origin: 60% bottom;
+        z-index: 1;
+        opacity: 1;
+    }
 }
 
-@keyframes heart {
+@keyframes full-heart {
     0% {
         transform: scale(0);
     }
@@ -34,6 +37,39 @@
     100% {
         transform: scale(1);
         color: $colour-primary;
+    }
+}
+
+@keyframes fillheart {
+    0% {
+        opacity: 0.25;
+        background-clip: text;
+        background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
+        color: transparent;
+    }
+    25% {
+        opacity: .33;
+        background-clip: text;
+        background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
+        color: transparent;
+    }
+    50% {
+        opacity: .50;
+        background-clip: text;
+        background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
+        color: transparent; 
+    }    
+    75% {
+        opacity: .75;
+        background-clip: text;
+        background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
+        color: transparent;
+    }
+    100% {
+        opacity: 1;
+        background-clip: text;
+        background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
+        color: transparent;
     }
 }
 
