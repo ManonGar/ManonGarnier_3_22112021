@@ -1,20 +1,26 @@
+.btn-heart {
+    cursor: pointer;
+}
+
 .btn-heart .far {
-    font-size: 28px;
-    color: black;
+    font-size: 24px;
+    color: $black;
     z-index: 1;
 }
 
 .btn-heart .fas {
-    color: white;
-    font-size: 24px;
+    color: transparent;
+    font-size: 20px;
 }
 
 .btn-heart:hover {
     .fas {
-        animation: full-heart 800ms linear forwards;
+        animation: full-heart 900ms linear forwards;
         transform-origin: 60% bottom;
-        z-index: 1;
-        opacity: 1;
+    }
+    .far {
+        animation: empty-heart 400ms linear forwards;
+        animation-delay: 700ms;
     }
 }
 
@@ -33,43 +39,22 @@
     } 
     60% {
         transform: scale(.81);
+        font-size: 22px;
     }
     100% {
         transform: scale(1);
-        color: $colour-primary;
+        background: -webkit-linear-gradient($colour-primary, $colour-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 24px;
     }
 }
 
-@keyframes fillheart {
+@keyframes empty-heart {
     0% {
-        opacity: 0.25;
-        background-clip: text;
-        background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
-        color: transparent;
-    }
-    25% {
-        opacity: .33;
-        background-clip: text;
-        background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
-        color: transparent;
-    }
-    50% {
-        opacity: .50;
-        background-clip: text;
-        background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
-        color: transparent; 
-    }    
-    75% {
-        opacity: .75;
-        background-clip: text;
-        background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
-        color: transparent;
+        color: $black;
     }
     100% {
-        opacity: 1;
-        background-clip: text;
-        background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
         color: transparent;
     }
 }
-
