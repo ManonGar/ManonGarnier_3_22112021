@@ -11,7 +11,7 @@ $anim-delay: $anim-duration / $num-menus;
     display: flex;
     opacity: 0;
     overflow: hidden;
-    animation: delay $anim-duration linear forwards;
+    animation: loading-menus $anim-duration linear forwards;
     @for $i from 1 through $num-menus {
         &--#{$i} {
             animation-delay: $anim-delay * $i;
@@ -25,11 +25,6 @@ $anim-delay: $anim-duration / $num-menus;
         display: flex;
         flex-direction: column;
         width: 100%;
-        overflow: hidden;
-    }
-    .card-description {
-        display: flex;
-        justify-content: space-between;
         overflow: hidden;
     }
     &__price {
@@ -46,66 +41,52 @@ $anim-delay: $anim-duration / $num-menus;
         font-size: 24px;
         width: 0px;
         opacity: 0;
-        transition: 0.2s;
-        transition-timing-function: ease-out;
+        transition: all 0.2s ease-in-out;
         }
     &:hover {
         & > .card-menu__check {
             width: 100px;
             opacity: 1;
-            transition: 0.3s;
-            transition-timing-function: ease-in;
             & > .fa-check-circle {
-                animation: rotate 1s ease-in-out;
+                animation: check-rotation 0.5s linear;
             }
         }
-        & >.card-menu__price {
-            margin-right: 20px;
-        }
     }
 }
 
-.card-description p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-@keyframes check {
-	0% {
-        transform: scaleX(0);
-        opacity: 0;
-       
-	}
-    50% {
-       
+.card-description {
+    display: flex;
+    justify-content: space-between;
+    & > p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
-	100% {
-        transform: scaleX(1);
-        opacity: 1;
-	}
 }
 
-@keyframes rotate {
+//-------------keyframes----------------//
+
+@keyframes check-rotation {
     from {
         transform: rotate(0deg);
+        opacity: 0;
     }
     to {
         transform: rotate(360deg);
+        opacity: 1;
     }
 }
 
-@keyframes delay {
+@keyframes loading-menus {
     0% {
-      transform: translateY(7px);
+      transform: translateY(15px);
       opacity:0;
     }
     50% {
-      transform: translateY(2.5px);
       opacity:0.5;
     }
     100% {
-      transform: translateY(-2.5px);
       opacity:1;
+      transform: translateY(0);
     }
 }
