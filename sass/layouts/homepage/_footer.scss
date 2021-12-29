@@ -15,6 +15,9 @@ footer {
         text-decoration: none;
         color: white;
     }
+    @include desktop-only {
+        text-align: center;
+    }
 }
 
 .fa-hands-helping {
