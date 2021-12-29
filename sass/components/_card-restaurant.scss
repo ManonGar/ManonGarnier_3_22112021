@@ -2,12 +2,12 @@
     height: 260px;
     flex: 1 100%;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgb(0 0 0 / 0.2);
-    background-color: white;
+    box-shadow: map-get($box-shadow, card);
+    background-color: $white;
     text-decoration: none;
-    color: black;
+    color: $black;
     margin-top: 8px;
-    @include desktop-only {
+    @include tablet-only {
         flex: 1 48%;
     }
 
@@ -37,7 +37,7 @@
 
     .new {
         background-color: $colour-tertiary;
-        color: green;
+        color: $green;
         position: absolute;
         top: 12px;
         right: 12px;

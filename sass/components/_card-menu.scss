@@ -4,7 +4,7 @@ $anim-delay: $anim-duration / $num-menus;
 
 .card-menu {
     border-radius: 16px;
-    box-shadow: 0 0 10px rgb(0 0 0 / 0.2);
+    box-shadow: map-get($box-shadow, card);
     cursor: pointer;
     flex: 1 100%;
     line-height: 24px;
@@ -36,7 +36,7 @@ $anim-delay: $anim-duration / $num-menus;
         align-items: center;
         background-color: $colour-tertiary;
         border-radius: 0 16px 16px 0;
-        color: white;
+        color: $white;
         font-size: 24px;
         width: 0px;
         opacity: 0;
@@ -63,7 +63,7 @@ $anim-delay: $anim-duration / $num-menus;
     }
 }
 
-//-------------keyframes----------------//
+/*-------------keyframes----------------*/
 
 @keyframes check-rotation {
     from {

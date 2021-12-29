@@ -2,12 +2,16 @@ $colour-primary: #9356DC;
 $colour-secondary: #FF79DA;
 $colour-tertiary: #99E2D0;
 
+$colour-location: #cfcece61;
+
 $lightgrey: whitesmoke;
-$grey: #cfcece61;
+$grey: grey;
 $darkgrey: #2e2c2ceb;
 $black: #000000de;
+$white: white;
+$green: green;
 
 $font-size: (logo-big:32px, heading:24px);
 $font-family: (text: ('Roboto', sans-serif), logo: ('Shrikhand', cursive));
-
-$breakpoints: (desktop: 768px, large-screen: 992px);
+$box-shadow: (card:0 0 10px rgb(0 0 0 / 0.2));
+$breakpoints: (tablet: 768px, desktop: 992px);

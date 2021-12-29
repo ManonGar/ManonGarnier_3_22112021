@@ -9,16 +9,14 @@
     box-shadow: -1px 5px 10px rgb(0 0 0 / 12%);
     position: relative;
     @include desktop-only {
-        padding: 40px 8px;
-        justify-content: center;
+        padding: 26px 50px;
     }
 
     &__number {
         background-color: $colour-primary;
-        background-color: #9356dc;
         padding: 2px 7px;
         border-radius: 50%;
-        color: white;
+        color: $white;
         position: absolute;
         left: -12px;
         @include desktop-only {
@@ -29,7 +27,7 @@
 
     .fas {
         margin: 0 32px 0 18px;
-        color: grey;
+        color: $grey;
         font-size: 20px;
     }
 

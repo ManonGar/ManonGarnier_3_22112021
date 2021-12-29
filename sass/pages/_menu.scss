@@ -28,6 +28,9 @@
     padding: 24px 18px;
     background-color: $lightgrey;
     border-radius: 32px 32px 0 0;
+    @include tablet-only {
+        padding: 24px 100px;
+    }
     @include desktop-only {
         padding: 24px 280px;
     }
