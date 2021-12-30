@@ -27,67 +27,59 @@
   color: $black;
   box-shadow: 0 0 20px rgba(0,0,0,.5);
   font-family: map-get($font-family, logo);
+  &:before {
+    content:'';
+    position:absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid $colour-primary;
+    border-right: 3px solid $colour-primary;
+    border-radius: 50%;
+    animation: circle 10s linear infinite;
+  }
 }
-.loader-ring:before
-{
-  content:'';
-  position:absolute;
-  top: -3px;
-  left: -3px;
-  width: 100%;
-  height: 100%;
-  border: 3px solid transparent;
-  border-top: 3px solid $colour-primary;
-  border-right: 3px solid $colour-primary;
-  border-radius: 50%;
-  animation: circle 2s linear infinite;
-}
+
 #dot
 {
-  display: block;
   position: absolute;
-  top: calc(50% - 2px);
   left: 50%;
   width: 50%;
   height: 4px;
   background: transparent;
   transform-origin: left;
-  animation: dot 2s linear infinite;
-}
-#dot:before
-{
-  content:'';
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: $colour-primary;
-  top: -6px;
-  right: -8px;
-  box-shadow: 0 0 20px $colour-secondary;
+  animation: dot 10s linear infinite;
+  &:before {
+    content:'';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: $colour-primary;
+    top: -6px;
+    right: -8px;
+    box-shadow: 0 0 20px $colour-secondary;
+  }
 }
 
 /*-------------keyframes----------------*/
 
-@keyframes circle
-{
-  0%
-  {
+@keyframes circle {
+  0% {
     transform: rotate(0deg);
   }
-  100%
-  {
+  100% {
     transform: rotate(360deg);
   }
 }
-@keyframes dot
-{
-  0%
-  {
+
+@keyframes dot {
+  0% {
     transform: rotate(45deg);
   }
-  100%
-  {
+  100% {
     transform: rotate(405deg);
   }
 }

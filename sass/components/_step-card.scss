@@ -11,7 +11,6 @@
     @include desktop-only {
         padding: 26px 50px;
     }
-
     &__number {
         background-color: $colour-primary;
         padding: 2px 7px;
@@ -24,16 +23,13 @@
             top: -8px;
         }
     }
-
     .fas {
         margin: 0 32px 0 18px;
         color: $grey;
         font-size: 20px;
     }
-
     &:hover {
-        background-color: #9356dc1f;
-        
+        background-color: #9356dc1f;  
         .fas {
             color: $colour-primary;
         }

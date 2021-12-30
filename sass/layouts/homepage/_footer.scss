@@ -10,16 +10,14 @@ footer {
     .fas {
         padding-right: 10px;
     }
-
     a {
         text-decoration: none;
         color: white;
     }
+    .fa-hands-helping {
+        font-size: 11px;
+    }
     @include desktop-only {
         text-align: center;
     }
-}
-
-.fa-hands-helping {
-    font-size: 11px;
 }

@@ -1,3 +1,17 @@
+/* ----- ordre d'import
+Utils 
+Variables
+Fonctions
+Mixins
+Placeholders
+Feuilles de style de tiers (vendors)
+Base
+Composants
+Layout
+Pages
+Thèmes
+--------------*/
+
 @import "./utils/variables";
 @import "./utils/mixins";
 
@@ -22,15 +36,3 @@
 @import "./pages/homepage";
 @import "./pages/menu";
 
-// ordre d'import
-// Utils :
-// Variables.
-// Fonctions.
-// Mixins.
-// Placeholders.
-// Feuilles de style de tiers (vendors) (si vous en avez).
-// Base.
-// Composants.
-// Layout.
-// Pages.
-// Thèmes.
