@@ -11,7 +11,7 @@ $anim-delay: $anim-duration / $num-menus;
     display: flex;
     opacity: 0;
     overflow: hidden;
-    animation: loading-menus $anim-duration linear forwards;
+    animation: loading-menus $anim-duration linear both;
     @for $i from 1 through $num-menus {
         &--#{$i} {
             animation-delay: $anim-delay * $i;
@@ -78,14 +78,15 @@ $anim-delay: $anim-duration / $num-menus;
 
 @keyframes loading-menus {
     0% {
-    //   transform: translateY(10%);
+      transform: translateY(16px);
       opacity: 0;
     }
     50% {
-      opacity: 0.5;
+        transform: translateY(6px);
+        opacity: 0.5;
     }
     100% {
       opacity: 1;
-    //   transform: translateY(0);
+      transform: translateY(0);
     }
 }

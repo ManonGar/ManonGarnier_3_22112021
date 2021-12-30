@@ -1,15 +1,13 @@
 .btn-heart {
     cursor: pointer;
-}
-
-.btn-heart .far {
-    font-size: 24px;
-    color: $black;
-}
-
-.btn-heart .fas {
-    color: transparent;
-    font-size: 20px;
+    .far {
+        font-size: 24px;
+        color: $black; 
+    }
+    .fas {
+        color: transparent;
+        font-size: 20px; 
+    }
 }
 
 .btn-heart:hover {
@@ -30,7 +28,7 @@
         transform: scale(0);
     }
     17% {
-        transform: scale(.18);
+        transform: scale(.2);
     }
     24% {
         transform: scale(.4);
@@ -39,7 +37,7 @@
         transform: scale(.6);
     } 
     60% {
-        transform: scale(.81);
+        transform: scale(.8);
         font-size: 22px;
     }
     100% {
