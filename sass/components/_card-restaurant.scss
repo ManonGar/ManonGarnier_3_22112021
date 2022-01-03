@@ -25,9 +25,9 @@
 
     &__info {
         display: flex;
-        justify-content: space-between;
-        padding: 14px 32px 0px 12px;
+        padding: 12px;
         line-height: 24px;
+        position: relative;
     }
 
     p {
@@ -43,5 +43,9 @@
         right: 12px;
         padding: 6px 12px;
         border-radius: 3px;
+    }
+    .btn-heart {
+        position: absolute;
+        right: 12px;
     }
 }
