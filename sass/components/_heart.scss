@@ -7,14 +7,14 @@
     }
     .fas {
         color: transparent;
-        font-size: 18px; 
+        font-size: 16px; 
     }
 }
 
 .btn-heart:hover {
     .fas {
         animation: full-heart 900ms linear forwards;
-        transform-origin: 50% bottom;
+        transform-origin: bottom;
     }
     .far {
         animation: empty-heart 400ms linear forwards;
@@ -36,6 +36,7 @@
     }
     46% {
         transform: scale(.6);
+        font-size: 20px;
     } 
     60% {
         transform: scale(.81);
@@ -51,8 +52,11 @@
 
 @keyframes empty-heart {
     0% {
-    
+        z-index: 1;
     }
+    // 60% {
+    //     z-index: 1;
+    // }
     100% {
         color: transparent;
         z-index: -1;
