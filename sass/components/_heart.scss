@@ -13,12 +13,12 @@
 
 .btn-heart:hover {
     .fas {
-        animation: full-heart 900ms linear forwards;
+        animation: full-heart 450ms linear forwards;
         transform-origin: bottom;
     }
     .far {
-        animation: empty-heart 400ms linear forwards;
-        animation-delay: 700ms;
+        animation: empty-heart 450ms linear forwards;
+        animation-delay: 300ms;
     }
 }
 
@@ -54,9 +54,6 @@
     0% {
         z-index: 1;
     }
-    // 60% {
-    //     z-index: 1;
-    // }
     100% {
         color: transparent;
         z-index: -1;

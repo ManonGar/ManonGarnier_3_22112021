@@ -38,7 +38,7 @@
     border-top: 3px solid $colour-primary;
     border-right: 3px solid $colour-primary;
     border-radius: 50%;
-    animation: circle 10s linear infinite;
+    animation: circle 2s linear infinite;
   }
 }
 
@@ -50,7 +50,7 @@
   height: 4px;
   background: transparent;
   transform-origin: left;
-  animation: dot 10s linear infinite;
+  animation: dot 2s linear infinite;
   &:before {
     content:'';
     position: absolute;
