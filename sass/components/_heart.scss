@@ -36,11 +36,9 @@
     }
     46% {
         transform: scale(.6);
-        font-size: 20px;
     } 
     60% {
         transform: scale(.81);
-        font-size: 22px;
     }
     100% {
         transform: scale(1);
@@ -52,6 +50,9 @@
 
 @keyframes empty-heart {
     0% {
+        z-index: 1;
+    }
+    50% {
         z-index: 1;
     }
     100% {

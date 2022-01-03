@@ -42,28 +42,6 @@
   }
 }
 
-#dot
-{
-  position: absolute;
-  left: 50%;
-  width: 50%;
-  height: 4px;
-  background: transparent;
-  transform-origin: left;
-  animation: dot 2s linear infinite;
-  &:before {
-    content:'';
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: $colour-primary;
-    top: -6px;
-    right: -8px;
-    box-shadow: 0 0 20px $colour-secondary;
-  }
-}
-
 /*-------------keyframes----------------*/
 
 @keyframes circle {
@@ -72,15 +50,6 @@
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-
-@keyframes dot {
-  0% {
-    transform: rotate(45deg);
-  }
-  100% {
-    transform: rotate(405deg);
   }
 }
 
