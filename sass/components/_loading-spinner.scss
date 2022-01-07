@@ -7,6 +7,9 @@
     background: linear-gradient(176deg, $colour-secondary, $colour-primary);
     z-index: 2;
     animation: loader 6s ease-in-out forwards;
+    img {
+      width: 120px;
+  }
 }
 
 .loader-ring

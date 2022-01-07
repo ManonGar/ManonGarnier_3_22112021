@@ -17,6 +17,9 @@ footer {
     .fa-hands-helping {
         font-size: 11px;
     }
+    .logo {
+        font-family: map-get($font-family, logo);
+    }
     @include desktop-only {
         text-align: center;
     }
