@@ -26,12 +26,8 @@ Thèmes
 @import "./components/loading-spinner";
 
 
-@import "./layouts/homepage/header";
-@import "./layouts/homepage/footer";
-@import "./layouts/homepage/section-1";
-@import "./layouts/homepage/section-2";
-@import "./layouts/homepage/section-3";
-@import "./layouts/homepage/section-4";
+@import "./layouts/header";
+@import "./layouts/footer";
 
 @import "./pages/homepage";
 @import "./pages/menu";

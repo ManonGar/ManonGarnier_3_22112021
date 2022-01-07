@@ -30,6 +30,7 @@ $anim-delay: $anim-duration / $num-menus;
     &__price {
         font-weight: 700;
         padding: 0 18px 12px 0;
+        margin-left: 8px;
     }
     &__check {
         display: flex;

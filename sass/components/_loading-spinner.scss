@@ -20,13 +20,11 @@
   transform: translate(-50%,-50%);
   width: 170px;
   height: 170px;
+  font-size: 24px;
   background: transparent;
   border: 3px solid $colour-secondary;
   border-radius: 50%;
-  font-size: 24px;
-  color: $black;
   box-shadow: 0 0 20px rgba(0,0,0,.5);
-  font-family: map-get($font-family, logo);
   &:before {
     content: '';
     position: absolute;
